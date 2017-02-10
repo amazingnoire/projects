@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="shortcut icon" href="../Images/Other/favicon.png" type="image/png">
+<link rel="stylesheet" href="../CSS/main.css" type="text/css">
+<script src="../JS/jquery-latest.js"></script>
+</head>
+<body>
+<font size="35px"><b>Название работы:</b> Поисковые системы Интернет: история, услуги, принципы работы<br>
+<b>Об авторе:</b> Cавинов А.В., г. Томск, гр. 18401, ТГУ<br>
+<b>Руководитель работы:</b> Погуда А.А. <br>
+<b>Дисциплина:</b> МИРОВЫЕ ИНФОРМАЦИОННЫЕ РЕСУРСЫ</font><br><br>
+<img src="../Images/Other/main.png" usemap="#map" align="right"></img>
+<map name="map">
+<area shape="poly" coords="140,65,185,107,154,149,127,168,81,134,114,79" href="https://www.google.ru/" title="Google" target="blank">
+<area shape="poly" coords="77,176,131,172,274,98,300,151,202,206,118,252,94,230" href="https://www.yandex.ru/" title="Яндекс" target="blank">
+<area shape="poly" coords="177,49,242,77,208,120,150,64" href="https://www.bing.com/" title="Bing" target="blank">
+<area shape="poly" coords="197,210,306,213,280,253,233,281,161,269,132,246" href="http://www.sputnik.ru/" title="Спутник" target="blank"></map>
+<div id="copyrf" class="r">©</div>
+
+
+<script>
+play=0;
+ $( "#copyrf" ).click(function() {
+  if (play==0) { play=1; $( "#copyrf" ).animate({left: '230px'});
+  setTimeout(function () {document.getElementById("copyrf").innerHTML="Савинов А.В.,2015 ©";}, 600)}
+  else { play=0;$( "#copyrf" ).animate({left: '0px'});
+  setTimeout(function () {document.getElementById("copyrf").innerHTML="©";}, 400)}
+  })
+  
+  
+  block_list = {};
+function click_func()
+{
+    var block_time = 5000, div=this.div;
+    if (!block_list[div])
+    {
+        window.open(div,'_blank');
+        block_list[div] = true;
+        unblock = function ()
+        {
+            delete block_list[div]
+        }
+        setTimeout(unblock,block_time);
+    }
+    return false;
+    
+}
+$('.no_double').on('click',click_func)
+</script>
+</body>
+</html>

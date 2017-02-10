@@ -1,0 +1,146 @@
+div.r{text-align:right;}
+#copyrf {
+  background: url('../Images/Other/Меню.jpg'); background-attachment: fixed; color:#013759; padding:20;margin-top:200px;margin-left:-280;
+  position: relative;
+  cursor: pointer;
+  left: 0;
+  transition: width 0.4s cubic-bezier(0, 0, 1, 1);
+  width:250px;
+  height:30;
+}
+
+/* Тип шрифта */
+@font-face {font-family: simpleiriska; src:url('../Font/cUcAxCx2.ttf');}
+* {font-family: Century Gothic; color:#faf0e4;}
+a.content {color:#faf0e4; font-size:25px;text-decoration: none; color: #99D1FA}
+a.content:hover{font-family: Century Gothic; color:#1a82b8; font-size:25;text-decoration: none;}
+a.service {color:#faf0e4; font-size:25px;text-decoration: none; }
+a.service:hover{font-family: Century Gothic; color:#1a82b8; font-size:25;text-decoration: none;}
+a.nextprev {color:#faf0e4; font-size:25px;text-decoration: none; color: #99D1FA;}
+a.nextprev:hover{font-family: Century Gothic; color:#1a82b8; font-size:25;text-decoration: none;}
+div.nextprevright{margin: -15 0 -15 0; float: right;}
+div.nextprevleft{margin: -15 0 -15 0; float: left;}
+ol {font-size:40;}
+
+area {outline:none}
+/* Тело */
+body
+{ 
+	margin: 30 50 0 50; /* Отступы */
+	background: url('../Images/Other/Фон.jpg'); /* Фон */
+	background-attachment: fixed; /* Прокрутка фона */
+	font-size:25px;
+	text-align:justify;
+} 
+body.header
+{ 
+	margin: 0; /* Отступы */
+	background: url('../Images/Other/Фон.jpg'); /* Фон */
+	background-attachment: fixed; /* Прокрутка фона */
+} 
+body.menu
+{ 
+	margin-left: 299.6; /* Отступы */
+	margin-top: 3; /* Отступы */
+	background: url('../Images/Other/Меню.jpg'); /* Фон */
+	background-attachment: fixed; /* Прокрутка фона */
+} 
+
+div.button2 {margin:-41.70px 0 0 378.6px;}
+div.button3 {margin:-41.70px 0 0 725.6px;}
+div.button4 {margin:-41.70px 0 0 1218.6px;}
+
+.leftstr, .rightstr {
+    float: left; /* Обтекание справа */ 
+    width: 50%; /* Ширина текстового блока */ 
+	margin: -15 0 -15 0;
+   }
+.rightstr {
+    text-align: right; /* Выравнивание по правому краю */ 
+   }
+   
+   
+/* Обтекание картинки слева и справа */
+img.left{float:left; /* Обтекание слева */} 
+img.right{float:right; /* Обтекание справа */}
+img.right {margin: 5px 5px 5px 15px; /* Отступы */; }
+img.left {margin: 35px 15px 5px 0px; /* Отступы */; }
+
+
+a.header:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Позиционирование */
+    left: 0; right: 0; bottom: 0; /* Положение подсказки */
+    background: rgba(0,0,0,0.3); /* Цвет фона */
+    color: #faf0e4; /* Цвет текста */
+    font-size: 36px; /* Размер шрифта */
+    padding: 2px 46%; /* Внутренние отступы */
+	font-family:simpleiriska;/* Тип шрифта */
+   }
+   
+   div.up{
+	margin:10 0 -31 44.5%;
+	opacity:0.5;
+   }
+   div.up:hover{
+	transition-property: opacity;
+	transition-duration: 2.5s;
+	opacity:1;
+   }
+  #service1 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service2 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service3 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service4 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service5 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service6 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service7 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service8 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service9 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service10 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service11 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service12 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service13 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   #service14 {
+	transition-property: margin-left;
+	transition-duration: 0.5s;
+   }
+   

@@ -1,0 +1,14 @@
+img.up{bottom: 150px; /* Отступ снизу */}
+
+img.down{bottom: 20px; /* Отступ снизу */}
+
+img.up, img.down{
+	position: fixed; /* Позиционирование */
+	right: 5%;  /* Отступ справа */
+	cursor: pointer;  /* Вид курсора */
+	display: none; /* Отображение */
+	opacity: 0.5 /* Прозрачность */
+}
+
+/* Кнопки под курсором */
+img.up:hover, img.down:hover{opacity: 1; /* Прозрачность */}

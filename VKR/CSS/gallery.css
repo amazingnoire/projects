@@ -1,0 +1,27 @@
+div.gallery{
+	margin-top: 100px; /* Отступ сверху */
+	margin-bottom: 25px; /* Отступ снизу*/
+}   
+
+.gallery a img{    
+    border-radius: 25px; /* Округления */
+    box-shadow: 0px 2px 4px 1px #DFDFDF;  /* Тень */
+    opacity: 0.7; /* Прозрачнсоть */
+    padding: 10px; /* Внутренние отступы */
+    height: 150px; /* Высота */
+}
+
+/* Изображение под курсором */
+.gallery a img:hover{opacity: 1; /* Прозрачноcть */}
+
+/* Активное изображение*/
+.gallery a:focus img{
+    height: 300px; /* Высота */
+    cursor: pointer;    /* Вид курсора */
+    box-shadow: 0px 4px 4px 1px #DFDFDF; /* Тень */
+}
+
+
+.gallery a{outline:0; /* Обводка */}  
+
+.gallery a img, .gallery a:focus img{-webkit-transition: All 1s ease; /* Эффект перехода */}

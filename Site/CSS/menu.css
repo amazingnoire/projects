@@ -1,0 +1,21 @@
+.button {
+  cursor: pointer;
+  background: #faf0e4;
+  text-decoration: none;
+  color: #013759;
+  font-family: simpleiriska;
+  font-size:36; 
+  font-weight:bold;
+}
+.float {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+}
+.float:hover, .float:focus, .float:active {
+  transform: translateY(-5px);
+  color: #1a82b8;
+  font-family: simpleiriska;
+  font-size:36; 
+}

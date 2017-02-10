@@ -1,0 +1,54 @@
+/* Оболочка слайдера и кнопок */
+#slider-wrap{width: 800px; /* Ширина */}
+	
+/* Оболочка слайдера */
+#slider{ 
+	width: 760px; /* Ширина */
+	height: 300px; /* Высота */
+	position: relative; /* Позиционирование */
+}
+	
+/* Слайд */
+.slide{width: 100%; /* Ширина */}
+	
+/* Кнопки смены слайдов */
+.sli-links{
+	margin-top: 10px; /* Отступ сверху */
+	margin-left: -5%; /* Отступ слева */
+	text-align: center; /* Выравнивание текста */
+}
+.sli-links .control-slide{
+	margin: 1px; /* Отступы */
+	display: inline-block; /* Отображение */
+	width: 16px; /* Ширина */
+	height: 16px; /* Высота */
+	text-indent: -9999px; /* Выступ первой строки */
+	background: url("../Images/Buttons/Радио-кнопки.png") center bottom no-repeat; /* Фон */
+}
+.sli-links .control-slide:hover{
+	cursor: pointer; /* Вид курсора */
+	background-position: center center; /* Позиционирование фона */
+}
+.sli-links .control-slide.active{background-position: center top; /* Позиционирование фона */}
+	
+/* Стрелки "Следующий" и "Предыдущий" */
+#prewbutton, #nextbutton{ 
+	display: block; /* Отображение */
+	width: 15px;  /* Ширина */
+	position: absolute;  /* Позиционирование */
+	opacity: 0.5;  /* Прозрачность */
+	z-index: 1;  /* Приоритет */
+	outline: none; /* Обводка */
+}
+#prewbutton{
+	background: url("../Images/Buttons/Стрелки.png") left center no-repeat;  /* Фон */
+	left: 10px; /* Отступ слева */
+}
+#nextbutton{
+	right: 10px; /* Отступ справа */
+	background: url("../Images/Buttons/Стрелки.png") right center no-repeat; /* Фон */
+}
+
+#prewbutton:hover, #nextbutton:hover{opacity: 0.8; /* Прозрачность */}
+.slide, #prewbutton, #nextbutton{height: 100%; /* Высота */} 
+#slider, .sli-links .control-slide, #prewbutton, #nextbutton {overflow: hidden; /* Отображение содержимого */}

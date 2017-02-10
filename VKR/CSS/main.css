@@ -1,0 +1,110 @@
+/* Тип шрифта */
+* {font-family: Century Gothic;}
+
+
+/* Тело */
+body{ 
+	margin: 0; /* Отступы */
+	background: url('../Images/Other/Фон(задний).jpg'); /* Фон */
+	background-attachment: fixed; /* Прокрутка фона */
+} 
+
+
+/* Основа для всех блоков */
+div#page{
+	width: 800px; /* Ширина */
+	left: 18%; /* Отступ слева */
+	position: absolute; /* Позиционирование */
+} 
+
+
+/* Логотип */
+
+.header{
+	background: url('../Images/Other/Логотип.png'); /* Фон */
+	display: block; /* Отображение */
+	height: 100px; /* Высота */
+    position: relative; /* Позиционирование */
+}
+
+
+/* Всплывающая подсказка */
+a.header:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Позиционирование */
+    left: 0; right: 0; bottom: 0; /* Положение подсказки */
+    background: rgba(0,0,0,0.5); /* Цвет фона */
+    color: #878787; /* Цвет текста */
+    font-size: 14px; /* Размер шрифта */
+    padding: 6px 200px; /* Внутренние отступы */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+
+/* Меню  */
+div.menu {
+	margin-top: 25px;  /* Отступ сверху  */
+	width: 800px; /* Ширина */
+	}
+
+/* Стиль кнопок меню  */
+a.button1{background: url('../Images/Buttons/Аллокатор.png'); /* Фон */ left: 0; /* Отступ слева  */} 
+a.button1:hover{background: url('../Images/Buttons/Аллокатор(2).png'); /* Фон */} 
+div.button1a{background: url('../Images/Buttons/Аллокатор(2).png'); /* Фон */ left: 0;} 
+
+a.button2{background: url('../Images/Buttons/Биллинговый сервис.png'); /* Фон */ left: 20%; /* Отступ слева  */}
+a.button2:hover{background: url('../Images/Buttons/Биллинговый сервис(2).png'); /* Фон */}
+div.button2a{background: url('../Images/Buttons/Биллинговый сервис(2).png'); /* Фон */ left: 20%;} 
+
+a.button3{background: url('../Images/Buttons/Храним тепло.png'); /* Фон */ left: 40%; /* Отступ слева  */}
+a.button3:hover{background: url('../Images/Buttons/Храним тепло(2).png'); /* Фон */}
+div.button3a{background: url('../Images/Buttons/Храним тепло(2).png'); /* Фон */ left: 40%;}
+
+a.button4{background: url('../Images/Buttons/Труба из полибутена.png'); /* Фон */ left: 60%; /* Отступ слева  */}
+a.button4:hover{background: url('../Images/Buttons/Труба из полибутена(2).png'); /* Фон */} 
+div.button4a{background: url('../Images/Buttons/Труба из полибутена(2).png'); /* Фон */ left: 60%;} 
+
+a.button5{background: url('../Images/Buttons/Галерея.png'); /* Фон */ left: 80%; /* Отступ слева  */} 
+a.button5:hover{background: url('../Images/Buttons/Галерея(2).png'); /* Фон */}
+div.button5a{background: url('../Images/Buttons/Галерея(2).png'); /* Фон */ left: 80%;}  
+
+a.button1, a.button2, a.button3, a.button4, a.button5{
+	display: block; /* Отображение; */
+	width: 160px; /* Ширина */
+	height: 50px; /* Высота */
+	position: absolute; /* Позиционирование */
+} 
+
+div.button1a, div.button2a, div.button3a, div.button4a, div.button5a{
+	display: block; /* Отображение; */
+	width: 160px; /* Ширина */
+	height: 50px; /* Высота */
+	position: absolute; /* Позиционирование */
+} 
+
+
+/* Блок с основным содержимым */
+div.content{
+	margin-top: 100px; /* Отступ сверху */
+	background: url('../Images/Other/Фон.png'); /* Фон */
+	text-align: justify; /* Выравнивание текста по ширине */
+} 
+
+
+/* Отступы для содержимого контента*/
+div.indent{
+	padding: 10px; /* Внутренние отступы */
+	margin: 10px; /* Отступы */
+} 
+
+
+/* Обтекание картинки слева и справа */
+img.left{float:left; /* Обтекание слева */} 
+img.right{float:right; /* Обтекание справа */}
+img.left, img.right {margin: 5px 7px 7px 0; /* Отступы */}
+
+
+/* Дополнительная информация */
+div.footer{
+	height:70px; /* Высота */
+	background:url('../Images/Other/ДопИнфо.png'); /* Фон */
+} 
